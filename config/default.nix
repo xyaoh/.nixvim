@@ -7,4 +7,6 @@
     colorscheme = "gruvbox-material-dark-medium";
   };
 
+  clipboard.register = "unnamedplus";
+
 }
