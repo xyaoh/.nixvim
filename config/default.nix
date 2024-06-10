@@ -1,12 +1,9 @@
 {
   imports = [
+    ./clipboard.nix
+    ./options.nix
+    ./colorscheme.nix
+    ./plugins/indent-blankline.nix
+    ./plugins/lsp.nix
   ];
-
-  colorschemes.base16 = {
-    enable = true;
-    colorscheme = "gruvbox-material-dark-medium";
-  };
-
-  clipboard.register = "unnamedplus";
-
 }
