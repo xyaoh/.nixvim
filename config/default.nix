@@ -5,5 +5,6 @@
     ./colorscheme.nix
     ./plugins/indent-blankline.nix
     ./plugins/lsp.nix
+    ./plugins/barbar.nix
   ];
 }
