@@ -18,6 +18,7 @@
     gruvbox_material_spell_foreground = "colored";
     gruvbox_material_ui_contrast = "low";
     gruvbox_material_show_eob = 1;
+    gruvbox_material_float_style = "dim";
     gruvbox_material_diagnostic_text_highlight = 0;
     gruvbox_material_diagnostic_line_highlight = 0;
     gruvbox_material_diagnostic_virtual_text = "colored";

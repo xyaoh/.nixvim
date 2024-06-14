@@ -4,7 +4,6 @@
 
     settings = {
       animation = false;
-      auto_hide = 1;
       icons = {
         separator = {
           left = "|";
