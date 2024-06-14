@@ -7,5 +7,6 @@
     ./plugins/treesitter.nix
     ./plugins/lsp.nix
     ./plugins/barbar.nix
+    ./plugins/oil.nix
   ];
 }
