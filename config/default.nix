@@ -8,5 +8,6 @@
     ./plugins/lsp.nix
     ./plugins/barbar.nix
     ./plugins/oil.nix
+    ./plugins/lualine.nix
   ];
 }
