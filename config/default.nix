@@ -10,5 +10,6 @@
     ./plugins/oil.nix
     ./plugins/lualine.nix
     ./plugins/alpha.nix
+    ./plugins/fugitive.nix
   ];
 }
