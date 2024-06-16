@@ -53,6 +53,33 @@
           ];
         };
       }
+      # -- EDIT directory --
+      {
+        type = "button";
+        val = "[.] Edit directory";
+        on_press.__raw = "function() vim.cmd[[e.]] end";
+        opts = {
+          keymap = [
+            "n"
+            "."
+            "<CMD>e.<CR>"
+            {noremap = true; silent = true; nowait = true;}
+          ];
+          position = "center";
+          cursor = 1;
+          width = 30;
+          shortcut = "";
+          align_shortcut = "right";
+          hl_shortcut = "Function";
+          hl = [
+            [
+              "Function"
+              0
+              3
+            ]
+          ];
+        };
+      }
       # -- BOOKMARKS --
       {
         type = "padding";
