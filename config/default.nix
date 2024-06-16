@@ -11,5 +11,6 @@
     ./plugins/lualine.nix
     ./plugins/alpha.nix
     ./plugins/fugitive.nix
+    ./plugins/telescope.nix
   ];
 }
