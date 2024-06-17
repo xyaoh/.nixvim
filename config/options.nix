@@ -2,8 +2,11 @@
   clipboard.register = "unnamedplus";
 
   opts = {
+    updatetime = 500;
+
     number = true;
     relativenumber = true;
+    signcolumn = "yes"; # always show signcolumn of size 2
 
     splitbelow = true; # new window is put below the current one
     splitright = true; # new window is put right of the current one
