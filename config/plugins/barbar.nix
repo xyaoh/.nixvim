@@ -30,6 +30,10 @@
         action = "<Cmd>BufferPickDelete 1<CR>";
         options.silent = true;
       };
+      restore = {
+        key = "<S-TAB>";
+        options.silent = true;
+      };
     };
   };
 
