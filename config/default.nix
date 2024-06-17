@@ -1,8 +1,9 @@
 {
   imports = [
+    ./colorscheme.nix
     ./options.nix
     ./keymaps.nix
-    ./colorscheme.nix
+    ./autocommands.nix
     ./plugins
   ];
 }
