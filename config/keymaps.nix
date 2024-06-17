@@ -5,19 +5,19 @@
   };
   
   keymaps = [
-    # open file explorer with <->
+    # open file explorer with "<leader>-"
     {
       mode = "n";
-      key = "-";
+      key = "<leader>-";
       action = "<cmd>e.<CR>";
       options = {
         silent = true;
       };
     }
-    # clear highlight with <esc>
+    # clear highlight with "<leader><esc>"
     {
       mode = "n";
-      key = "<esc>";
+      key = "<leader><esc>";
       action = "<cmd>noh<CR>";
       options = {
         silent = true;
