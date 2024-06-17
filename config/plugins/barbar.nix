@@ -4,19 +4,39 @@
 
     settings = {
       animation = false;
+      tabpages = false;
       icons = {
+        button = "";
+        modified.button = "·";
         separator = {
-          left = "|";
-          right = "|";
+          left = "";
+          right = "";
           separator_at_end = false;
+        };
+        inactive.separator = {
+          left = "";
+          right = "";
         };
       };
     };
 
     keymaps = {
-      next.key = "<TAB>";
-      previous.key = "<S-TAB>";
-      close.key = "<C-C>";
+      pick = {
+        key = "<TAB>";
+        options.silent = true;
+      };
+      pickDelete = {
+        key = "<C-TAB>";
+        action = "<Cmd>BufferPickDelete 1<CR>";
+        options.silent = true;
+      };
     };
+  };
+
+  highlightOverride = {
+    BufferCurrentMod.link = "BufferCurrent";
+    BufferAlternateMod.link = "BufferAlternate";
+    BufferVisibleMod.link = "BufferVisible";
+    BufferInactiveMod.link = "BufferInactive";
   };
 }
