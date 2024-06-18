@@ -19,4 +19,8 @@
     # highlight languages inside strings for nix files
     hmts.enable = true;
   };
+
+  highlightOverride = {
+    TSDefinition.link = "Visual";
+  };
 }
