@@ -1,22 +1,18 @@
 {
-  plugins = {
-    indent-blankline = {
-      enable = true;
+  plugins.indent-blankline = {
+    enable = true;
+
+    settings = {
+      indent = {
+        char = "╎";
+        smart_indent_cap = true;
+      };
+      scope = {
+        enabled = true;
+        highlight = "Keyword";
+        show_start = false;
+        show_end = false;
+      };
     };
   };
-
-  extraConfigLua = '' 
-    require("ibl").setup {
-      indent = {
-        char = "╎",
-        smart_indent_cap = true,
-      },
-      scope = {
-        enabled = true,
-        highlight = { "statement" },
-        show_start = false,
-        show_end = false,
-      },
-    }
-  '';
 }
