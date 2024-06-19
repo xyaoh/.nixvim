@@ -5,7 +5,7 @@
       # -- HEADER --
       {
         type = "padding";
-        val = 3;
+        val = 4;
       }
       {
         type = "text";
@@ -24,12 +24,12 @@
       }
       {
         type = "padding";
-        val = 3;
+        val = 4;
       }
       # -- NEWFILE --
       {
         type = "button";
-        val = "[e] New file";
+        val = "[e] Edit new file";
         on_press.__raw = "function() vim.cmd[[ene]] end";
         opts = {
           keymap = [
@@ -40,23 +40,20 @@
           ];
           position = "center";
           cursor = 1;
-          width = 30;
+          width = 34;
           shortcut = "";
           align_shortcut = "right";
-          hl_shortcut = "Function";
-          hl = [
-            [
-              "Function"
-              0
-              3
-            ]
-          ];
+          hl = [ [ "Function" 0 3 ] ];
         };
       }
-      # -- EDIT directory --
+      {
+        type = "padding";
+        val = 1;
+      }
+      # -- EDIT --
       {
         type = "button";
-        val = "[.] Edit directory";
+        val = "[.] Open current directory";
         on_press.__raw = "function() vim.cmd[[e.]] end";
         opts = {
           keymap = [
@@ -67,124 +64,20 @@
           ];
           position = "center";
           cursor = 1;
-          width = 30;
+          width = 34;
           shortcut = "";
           align_shortcut = "right";
-          hl_shortcut = "Function";
-          hl = [
-            [
-              "Function"
-              0
-              3
-            ]
-          ];
-        };
-      }
-      # -- BOOKMARKS --
-      {
-        type = "padding";
-        val = 2;
-      }
-      {
-        type = "text";
-        val = "_Bookmarks";
-        opts = {
-          hl = "Keyword";
-          position = "center";
+          hl = [ [ "Function" 0 3 ] ];
         };
       }
       {
-        type = "group";
-        val = [
-          {
-            type = "button";
-            val = "[1] Nixvim";
-            on_press.__raw = "function() vim.cmd[[e ~/.nixvim]] end";
-            opts = {
-              keymap = [
-                "n"
-                "1"
-                "<CMD>e ~/.nixvim<CR>"
-                {noremap = true; silent = true; nowait = true;}
-              ];
-              position = "center";
-              cursor = 1;
-              width = 30;
-              shortcut = " ";
-              align_shortcut = "right";
-              hl = [
-                [
-                  "Function"
-                    0
-                    3
-                ]
-              ];
-            };
-          }
-          {
-            type = "button";
-            val = "[2] Nixos";
-            on_press.__raw = "function() vim.cmd[[e ~/.dotfiles/nixos]] end";
-            opts = {
-              keymap = [
-                "n"
-                "2"
-                "<CMD>e ~/.dotfiles/nixos<CR>"
-                {noremap = true; silent = true; nowait = true;}
-              ];
-              position = "center";
-              cursor = 1;
-              width = 30;
-              shortcut = " ";
-              align_shortcut = "right";
-              hl = [
-                [
-                  "Function"
-                    0
-                    3
-                ]
-              ];
-            };
-          }
-          {
-            type = "button";
-            val = "[3] Home-manager";
-            on_press.__raw = "function() vim.cmd[[e ~/.dotfiles/home-manager]] end";
-            opts = {
-              keymap = [
-                "n"
-                "3"
-                "<CMD>e ~/.dotfiles/home-manager<CR>"
-                {noremap = true; silent = true; nowait = true;}
-              ];
-              position = "center";
-              cursor = 1;
-              width = 30;
-              shortcut = " ";
-              align_shortcut = "right";
-              hl = [
-                [
-                  "Function"
-                    0
-                    3
-                ]
-              ];
-            };
-          }
-        ];
-      }
-      {
         type = "padding";
-        val = 2;
+        val = 1;
       }
-      # -- FOOTER --
-      {
-        type = "padding";
-        val = 20;
-      }
+      # -- QUIT ---
       {
         type = "button";
-        val = "[q] Quit Nvim";
+        val = "[q] Quit Neovim";
         on_press.__raw = "function() vim.cmd[[qa]] end";
         opts = {
           keymap = [
@@ -195,29 +88,24 @@
           ];
           position = "center";
           cursor = 1;
-          width = 30;
+          width = 34;
           shortcut = "";
           align_shortcut = "right";
-          hl_shortcut = "Keyword";
-          hl = [
-            [
-              "Keyword"
-                0
-                3
-            ]
-          ];
+          hl = [ [ "Function" 0 3 ] ];
         };
       }
+      # -- FOOTER --
       {
         type = "padding";
-        val = 3;
+        val = 22;
       }
       {
-        type = "text";
+        type = "button";
         val = "https://github.com/xyaoh/.nixvim";
+        on_press.__raw = "function() vim.cmd[[yank]] end";
         opts = {
-          hl = "Type";
           position = "center";
+          cursor = 0;
         };
       }
     ];
