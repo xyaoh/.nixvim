@@ -6,6 +6,12 @@
       group = "highlight_yank";
       callback.__raw = "function() vim.highlight.on_yank{higroup='Visual'} end";
     }
+    {
+      desc = "open help in vertical split";
+      event = "FileType";
+      pattern = "help";
+      command = "wincmd L";
+    }
   ];
 
   autoGroups = {
