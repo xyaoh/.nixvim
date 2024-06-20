@@ -26,4 +26,15 @@
   };
 
   colorscheme = "gruvbox-material";
+
+  highlightOverride = {
+    NormalFloat = {
+      fg = "#ddc7a1";
+      bg = "#1d2021";
+    };
+    FloatBorder = {
+      fg = "#1d2021";
+      bg = "#1d2021";
+    };
+  };
 }

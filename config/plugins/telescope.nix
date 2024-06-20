@@ -38,10 +38,13 @@
   };
 
   highlightOverride = {
-    TelescopeSelection.link = "IncSearch";
     TelescopeNormal.link = "NormalFloat";
     TelescopeBorder.link = "FloatBorder";
     TelescopeTitle.link = "Function";
     TelescopePromptPrefix.link = "String";
+    TelescopeSelection.link = "IncSearch";
+    TelescopeMatching.link = "Function";
+    TelescopePreviewLine.link = "Visual";
+    TelescopePreviewMatch.link = "Visual";
   };
 }
