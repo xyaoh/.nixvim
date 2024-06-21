@@ -2,7 +2,7 @@
   imports = [
     ./alpha.nix
     ./lualine.nix
-    ./barbar.nix
+    ./bufferline.nix
     ./indent-blankline.nix
 
     ./treesitter.nix
