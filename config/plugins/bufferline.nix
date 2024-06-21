@@ -1,5 +1,3 @@
-{ pkgs , ... }:
-
 let
   colors = {
     fg0 = "#ddc7a1";
@@ -12,11 +10,6 @@ let
   };
 in
 {
-  extraPackages = with pkgs; [
-    ripgrep
-    fd
-  ];
-
   plugins.bufferline = {
     enable = true;
     separatorStyle = "slope";
