@@ -7,10 +7,12 @@
 
     ./treesitter.nix
     ./lsp.nix
+    ./copilot.nix
 
     ./oil.nix
     ./telescope.nix
 
     ./fugitive.nix
   ];
+  # TODO add and configure :[vimtex / markdown-preview]
 }
