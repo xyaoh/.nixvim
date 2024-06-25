@@ -25,5 +25,8 @@
 
     swapfile = false; # disable the swap file
     undofile = true; # automatically save and restore undo history
+
+    completeopt = ["menu" "menuone"];
+    pumheight = 10;
   };
 }

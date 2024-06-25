@@ -7,6 +7,7 @@
 
     ./treesitter.nix
     ./lsp.nix
+    ./cmp.nix
     ./copilot.nix
 
     ./oil.nix

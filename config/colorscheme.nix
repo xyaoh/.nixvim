@@ -36,5 +36,9 @@
       fg = "#1d2021";
       bg = "#1d2021";
     };
+    Pmenu.link = "NormalFloat";
+    PmenuSel.link = "IncSearch";
+    PmenuSbar.link = "Pmenu";
+    PmenuThumb.link = "PmenuSel";
   };
 }
