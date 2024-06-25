@@ -6,4 +6,7 @@
     ./autocommands.nix
     ./plugins
   ];
+
+  viAlias = true;
+  vimAlias = true;
 }
