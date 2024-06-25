@@ -19,6 +19,27 @@
     };
 
     servers = {
+      # python
+      ruff.enable = true;
+      pylyzer.enable = false;
+      pylsp = {
+        enable = true;
+        settings = {
+          plugins = {
+            # ruff already provide those features
+            autopep8.enabled = false;
+            flake8.enabled = false;
+            mccabe.enabled = false;
+            preload.enabled = false;
+            pycodestyle.enabled = false;
+            pydocstyle.enabled = false;
+            pyflakes.enabled = false;
+            pylint.enabled = false;
+            ruff.enabled = false;
+            yapf.enabled = false;
+          };
+        };
+      };
       # rust
       rust-analyzer = {
         enable = true;
@@ -27,8 +48,6 @@
       };
       # haskell
       hls.enable = true;
-      # python
-      ruff.enable = true;
     };
   };
 }
