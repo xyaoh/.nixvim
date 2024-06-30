@@ -32,6 +32,11 @@ in
         bold = true;
         italic = true;
       };
+      duplicateSelected = {
+        fg = colors.fg0;
+        bg = colors.bg2;
+        italic = true;
+      };
       closeButtonSelected = {
         fg = colors.fg0;
         bg = colors.bg2;
@@ -59,6 +64,11 @@ in
         bold = false;
         italic = false;
       };
+      duplicateVisible = {
+        fg = colors.fg0;
+        bg = colors.bg1;
+        italic = false;
+      };
       closeButtonVisible = {
         fg = colors.fg0;
         bg = colors.bg1;
@@ -84,6 +94,11 @@ in
         fg = colors.fg1;
         bg = colors.bg0;
         bold = false;
+        italic = false;
+      };
+      duplicate = {
+        fg = colors.fg1;
+        bg = colors.bg0;
         italic = false;
       };
       closeButton = {
