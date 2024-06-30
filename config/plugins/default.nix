@@ -14,6 +14,7 @@
     ./telescope.nix
 
     ./fugitive.nix
+    ./surround.nix
   ];
   # TODO add and configure :[vimtex / markdown-preview]
 }
