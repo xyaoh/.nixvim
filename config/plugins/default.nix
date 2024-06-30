@@ -1,6 +1,5 @@
 {
   imports = [
-    ./alpha.nix
     ./lualine.nix
     ./bufferline.nix
     ./indent-blankline.nix
