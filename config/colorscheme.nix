@@ -7,7 +7,7 @@
   ];
 
   globals = {
-    gruvbox_material_background = "medium";
+    gruvbox_material_background = "hard";
     gruvbox_material_foreground = "material";
     gruvbox_material_disable_italic_comment = 0;
     gruvbox_material_enable_bold = 1;
@@ -30,11 +30,11 @@
   highlightOverride = {
     NormalFloat = {
       fg = "#ddc7a1";
-      bg = "#1d2021";
+      bg = "#141617";
     };
     FloatBorder = {
-      fg = "#1d2021";
-      bg = "#1d2021";
+      fg = "#141617";
+      bg = "#141617";
     };
     Pmenu.link = "NormalFloat";
     PmenuSel.link = "IncSearch";

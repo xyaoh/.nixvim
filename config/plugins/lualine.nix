@@ -8,7 +8,7 @@ let
     orange = "#e78a4e";
     purple = "#d3869b";
     fg = "#ddc7a1";
-    bg = "#282828";
+    bg = "#1d2021";
   };
 in
 {
